@@ -17,7 +17,7 @@ const BasicInfo = (props) => {
       <a href="/docs/Max__Golubev_CV.docx" className="download-icon" data-toggle="tooltip" data-placement="bottom" title="download cv.docx"><i className="fa fa-download fa-2x" aria-hidden="true"></i></a>
         <div className="row">
           <div className="col-xs-12">
-            <img src="/images/image.jpg" className="img-circle center-block" />
+            <img src="/images/max.png" className="img-circle center-block" />
             <h4 className="text-center">{ props.info.name }</h4>
             <p className="text-center"><strong>{ props.info.title }</strong></p>
             <hr className="small-divider" />
