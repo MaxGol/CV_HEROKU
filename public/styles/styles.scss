@@ -1,0 +1,43 @@
+body {
+  background-color: #EEEEEE;
+}
+
+.component-container {
+  position: relative;
+  background-color: #FFFFFF;
+  padding: 20px 0;
+  margin-top: 20px;
+  border-radius: 5px;
+  & .small-divider {
+    width: 30%;
+    margin: 10px auto;
+  }
+  & .download-icon {
+    background-color: #0E81C2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 12px 12px;
+    transition: .4s all;
+    margin-right: 20px;
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    z-index: 1;
+    & .fa.fa-download {
+      color: #FFFFFF;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: #139EED;
+    }
+  }
+}
+
+.tooltip-inner {
+  background-color: #139EED;
+}
+
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #139EED;
+}

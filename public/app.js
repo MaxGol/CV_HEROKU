@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import BasicInfo from './components/basicinfo';
+import MainSection from './components/mainsection';
 
 class App extends Component {
   constructor(props){
@@ -31,6 +32,7 @@ class App extends Component {
     return (
       <div>
         <BasicInfo info = {this.state.data.basicinfo} />
+        <MainSection info = {this.state.data} />
       </div>
     )
   }
