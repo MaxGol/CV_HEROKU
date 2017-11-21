@@ -2,8 +2,6 @@ import React from 'react';
 
 const BasicInfo = (props) => {
 
-    console.log(props.info);
-
     if(!props.info) {
       return <div>Loading <i className="fa fa-spinner fa-spin" aria-hidden="true"></i></div>;
     }
@@ -14,7 +12,7 @@ const BasicInfo = (props) => {
 
     return(
       <div className="component-container">
-      <a href="/docs/Max__Golubev_CV.docx" className="download-icon" data-toggle="tooltip" data-placement="bottom" title="download cv.docx"><i className="fa fa-download fa-2x" aria-hidden="true"></i></a>
+      <a href="/docs/Max__Golubev_CV.docx" className="download-icon" data-toggle="tooltip" data-placement="left" title="download cv.docx"><i className="fa fa-download fa-2x" aria-hidden="true"></i></a>
         <div className="row">
           <div className="col-xs-12">
             <img src="/images/max.png" className="img-circle center-block" />

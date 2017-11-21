@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "nodemon server.js && webpack --watch",
     "build": "webpack",
     "watch": "webpack --watch"
   },
@@ -17,7 +17,8 @@
     "express-handlebars": "^3.0.0",
     "mongoose": "^4.10.8",
     "react": "^16.1.0",
-    "react-dom": "^16.1.0"
+    "react-dom": "^16.1.0",
+    "react-owl-carousel2": "^0.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

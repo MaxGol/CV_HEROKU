@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import BasicInfo from './components/basicinfo';
-import MainSection from './components/mainsection';
+import Bio from './components/bio';
+import TechSkills from './components/techskills';
+import Experience from './components/experience';
+import Projects from './components/projects';
 
 class App extends Component {
   constructor(props){
@@ -30,9 +33,12 @@ class App extends Component {
   render() {
     console.log('BasicInfoApp in App', this.state.data);
     return (
-      <div>
+      <div className="wrapper">
         <BasicInfo info = {this.state.data.basicinfo} />
-        <MainSection info = {this.state.data} />
+        <Bio info = {this.state.data.bio} />
+        <TechSkills info = {this.state.data.skills} />
+        <Experience info = {this.state.data.experience} />
+        <Projects />
       </div>
     )
   }
