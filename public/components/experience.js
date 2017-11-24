@@ -4,8 +4,6 @@ import ExperienceItem from './experienselist';
 
 const Experience = (props) => {
 
-  console.log(props.info);
-
   if(!props.info) {
     return <div><i className="fa fa-spinner fa-spin" aria-hidden="true"></i></div>;
   }

@@ -31,7 +31,6 @@ class App extends Component {
   };
 
   render() {
-    console.log('BasicInfoApp in App', this.state.data);
     return (
       <div className="wrapper">
         <BasicInfo info = {this.state.data.basicinfo} />

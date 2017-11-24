@@ -12,7 +12,7 @@ const BasicInfo = (props) => {
       })
     })
 
-    const tooltipText = "<p>This CV has been build with MongoDB, Express, React and Node</p>";
+    const tooltipText = "This CV has been build with MongoDB, Express, React and Node";
 
     return(
       <div className="component-container">

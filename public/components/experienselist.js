@@ -2,8 +2,6 @@ import React from 'react';
 
 const ExperienceItem = (props) => {
 
-  console.log(props.work);
-
   const duty = props.work.duty.map(function(itemduty, index){
     return <li key={index}>{itemduty}</li>;
   });
