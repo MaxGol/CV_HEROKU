@@ -4,7 +4,7 @@ import OwlCarousel from 'react-owl-carousel2';
 const Projects = (props) => {
 
   const options = {
-      items: 5,
+      items: 4,
       nav: true,
       rewind: true,
       responsive: {
@@ -17,7 +17,7 @@ const Projects = (props) => {
           nav: true
         },
         1000: {
-          items: 5,
+          items: 4,
           nav: true
         }
       }
@@ -39,8 +39,8 @@ const Projects = (props) => {
             <div className="image-cor center-block"><a href="http://siemens.lemonadereward.com/DIGITAL/PAGES/pension_modeller/" target="_blank"><div className="inner-image-cor"><strong>Pension<br /> Moduller</strong></div></a></div>
             <div className="image-cor center-block"><a href="http://lemonademoney.com/mortgage-app/which-property" target="_blank"><div className="inner-image-cor"><strong>Mortgage<br /> Calculator</strong></div></a></div>
             <div className="image-cor center-block"><a href="https://github.com/MaxGol/react-cards" target="_blank"><div className="inner-image-cor"><strong>Credit<br /> (React)</strong></div></a></div>
-            <div className="image-cor center-block"><a href="#" target="_blank"><div className="inner-image-cor"><strong>MERN<br /> Project (React)</strong></div></a></div>
-            <div className="image-cor center-block"><a href="#" target="_blank"><div className="inner-image-cor"><strong>Tab-Widget<br /> (React)</strong></div></a></div>
+            <div className="image-cor center-block"><a href="https://github.com/MaxGol/CV_HEROKU" target="_blank"><div className="inner-image-cor"><strong>CV<br />(React)</strong></div></a></div>
+            <div className="image-cor center-block"><a href="https://github.com/MaxGol/MERN" target="_blank"><div className="inner-image-cor"><strong>MERN<br /> (React)</strong></div></a></div>
           </OwlCarousel>
         </div>
       </div>

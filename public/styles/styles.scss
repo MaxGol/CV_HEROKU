@@ -7,10 +7,11 @@ body {
 }
 
 .component-container {
+  max-width: 900px;
   position: relative;
   background-color: #FFFFFF;
   padding: 20px 20px;
-  margin-top: 20px;
+  margin: 20px auto auto 20px;
   border-radius: 5px;
   & .small-divider {
     width: 30%;
@@ -53,14 +54,17 @@ body {
     top: 80px;
     z-index: 1;
     & .fa {
-      color: green;
+      color: #A569BD;
     }
     & + .tooltip .tooltip-inner {
-      background-color: green;
+      background-color: #A569BD;
+      a {
+        color: white;
+      }
     }
 
     & + .tooltip.left .tooltip-arrow {
-      border-left-color: green;
+      border-left-color: #A569BD;
     }
   }
   & .section-title {
@@ -88,4 +92,8 @@ body {
   font-size: 18px;
   text-align: center;
   padding-top: 20px;
+}
+
+.work-info {
+  margin-bottom: 40px;
 }

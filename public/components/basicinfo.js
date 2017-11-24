@@ -12,12 +12,12 @@ const BasicInfo = (props) => {
       })
     })
 
-    const tooltipText = "This CV has been build with MongoDB, Express, React and Node";
+    const tooltipText = "<p>This CV has been build with MongoDB, Express, React and Node</p>";
 
     return(
       <div className="component-container">
       <a href="/docs/Max__Golubev_CV.docx" className="download-icon" data-toggle="tooltip" data-placement="left" title="download cv.docx"><i className="fa fa-download fa-2x" aria-hidden="true"></i></a>
-      <div className="info" data-toggle="tooltip" data-placement="left" title={ tooltipText }><i className="fa fa-2x fa-info-circle" aria-hidden="true"></i></div>
+      <a className="info" href='https://github.com/MaxGol/CV_HEROKU' data-toggle="tooltip" data-placement="left" title={ tooltipText }><span className='fa fa-2x fa-github'></span></a>
         <div className="row">
           <div className="col-xs-12">
             <img src="/images/max.png" className="img-circle center-block" />

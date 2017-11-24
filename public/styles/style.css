@@ -5,10 +5,11 @@ body {
   margin: 20px 0; }
 
 .component-container {
+  max-width: 900px;
   position: relative;
   background-color: #FFFFFF;
   padding: 20px 20px;
-  margin-top: 20px;
+  margin: 20px auto auto 20px;
   border-radius: 5px; }
   .component-container .small-divider {
     width: 30%;
@@ -42,11 +43,13 @@ body {
     top: 80px;
     z-index: 1; }
     .component-container .info .fa {
-      color: green; }
+      color: #A569BD; }
     .component-container .info + .tooltip .tooltip-inner {
-      background-color: green; }
+      background-color: #A569BD; }
+      .component-container .info + .tooltip .tooltip-inner a {
+        color: white; }
     .component-container .info + .tooltip.left .tooltip-arrow {
-      border-left-color: green; }
+      border-left-color: #A569BD; }
   .component-container .section-title {
     color: #0E81C2; }
 
@@ -68,5 +71,8 @@ body {
   font-size: 18px;
   text-align: center;
   padding-top: 20px; }
+
+.work-info {
+  margin-bottom: 40px; }
 
 /*# sourceMappingURL=style.css.map */
