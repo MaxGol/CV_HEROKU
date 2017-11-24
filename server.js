@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 
 // =============================================================================
 // mangoose initialisation and call database
-mongoose.connect('mongodb://maxgolubev:Maxest1976@ds113935.mlab.com:13935/nodeapi');
+mongoose.connect('mongodb://XXXXXXX:XXXXXXX/XXXXX');
 
 // =============================================================================
 // set port and set public folder path
