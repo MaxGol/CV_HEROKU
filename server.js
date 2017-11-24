@@ -23,6 +23,17 @@ app.engine('handlebars', handlebars.engine);
 app.set('view engine', 'handlebars');
 
 // =============================================================================
+//To prevent errors from Cross Origin Resource Sharing, set headers to allow CORS with middleware:
+app.use(function(req, res, next) {
+ res.setHeader('Access-Control-Allow-Origin', '*');
+ res.setHeader('Access-Control-Allow-Credentials', 'true');
+ res.setHeader('Access-Control-Allow-Methods', 'GET,HEAD,OPTIONS,POST,PUT,DELETE');
+ res.setHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
+ res.setHeader('Cache-Control', 'no-cache');
+  next();
+});
+
+// =============================================================================
 // render intial view on root route
 app.get('/', function(req, res){
   res.render('index');

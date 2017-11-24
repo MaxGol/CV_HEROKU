@@ -27,9 +27,8 @@ body {
     border-radius: 50%;
     padding: 12px 12px;
     transition: .4s all;
-    margin-right: 20px;
     position: absolute;
-    right: 0px;
+    right: 20px;
     top: 20px;
     z-index: 1;
     & .fa.fa-download {
@@ -39,18 +38,34 @@ body {
       cursor: pointer;
       background-color: #139EED;
     }
+
+    & + .tooltip .tooltip-inner {
+      background-color: #139EED;
+    }
+
+    & + .tooltip.left .tooltip-arrow {
+      border-left-color: #139EED;
+    }
+  }
+  & .info {
+    position: absolute;
+    right: 32px;
+    top: 80px;
+    z-index: 1;
+    & .fa {
+      color: green;
+    }
+    & + .tooltip .tooltip-inner {
+      background-color: green;
+    }
+
+    & + .tooltip.left .tooltip-arrow {
+      border-left-color: green;
+    }
   }
   & .section-title {
     color: #0E81C2;
   }
-}
-
-.tooltip-inner {
-  background-color: #139EED;
-}
-
-.tooltip.left .tooltip-arrow {
-  border-left-color: #139EED;
 }
 
 .work-info {

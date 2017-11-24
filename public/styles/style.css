@@ -23,9 +23,8 @@ body {
     border-radius: 50%;
     padding: 12px 12px;
     transition: .4s all;
-    margin-right: 20px;
     position: absolute;
-    right: 0px;
+    right: 20px;
     top: 20px;
     z-index: 1; }
     .component-container .download-icon .fa.fa-download {
@@ -33,14 +32,23 @@ body {
     .component-container .download-icon:hover {
       cursor: pointer;
       background-color: #139EED; }
+    .component-container .download-icon + .tooltip .tooltip-inner {
+      background-color: #139EED; }
+    .component-container .download-icon + .tooltip.left .tooltip-arrow {
+      border-left-color: #139EED; }
+  .component-container .info {
+    position: absolute;
+    right: 32px;
+    top: 80px;
+    z-index: 1; }
+    .component-container .info .fa {
+      color: green; }
+    .component-container .info + .tooltip .tooltip-inner {
+      background-color: green; }
+    .component-container .info + .tooltip.left .tooltip-arrow {
+      border-left-color: green; }
   .component-container .section-title {
     color: #0E81C2; }
-
-.tooltip-inner {
-  background-color: #139EED; }
-
-.tooltip.left .tooltip-arrow {
-  border-left-color: #139EED; }
 
 .work-info {
   font-size: 13px; }
