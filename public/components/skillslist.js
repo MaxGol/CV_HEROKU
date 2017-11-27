@@ -16,7 +16,8 @@ const SkillsList = (props) => {
 
   return(
     <div className="row">
-      <div className="col-sm-2 text-right"><strong>{props.name}:</strong></div>
+      <div className="col-sm-2 text-right hidden-xs"><strong>{props.name}:</strong></div>
+      <div className="col-sm-2 visible-xs"><strong>{props.name}:</strong></div>
       <div className="col-sm-10">{skillsItems}</div>
     </div>
   )
