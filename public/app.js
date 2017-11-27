@@ -37,7 +37,7 @@ class App extends Component {
         <Bio info = {this.state.data.bio} />
         <TechSkills info = {this.state.data.skills} />
         <Experience info = {this.state.data.experience} />
-        <Projects />
+        <Projects info = {this.state.data.projects} />
       </div>
     )
   }
