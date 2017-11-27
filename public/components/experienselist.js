@@ -8,8 +8,9 @@ const ExperienceItem = (props) => {
 
   return(
     <div className="row work-info">
-      <div className="col-xs-12">
-        <h4>{ props.work.company }<span className="pull-right">{ props.work.time }</span></h4>
+      <div className="col-xs-12 col-sm-3 exp-time"><strong>{ props.work.time }</strong></div>
+      <div className="col-xs-12 col-sm-9">
+        <h4>{ props.work.company }</h4>
         <p>{ props.work.overview }</p>
         <h5><strong>{ props.work.jobtitle }</strong></h5>
         <ul>

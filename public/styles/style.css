@@ -8,7 +8,7 @@ body {
   max-width: 900px;
   position: relative;
   background-color: #FFFFFF;
-  padding: 20px 20px;
+  padding: 20px 40px;
   margin: 20px auto 20px auto;
   border-radius: 5px; }
   .component-container .small-divider {
@@ -57,9 +57,9 @@ body {
   font-size: 13px; }
 
 .image-cor {
-  width: 200px;
+  width: 190px;
   height: 100px;
-  background-color: #cccccc;
+  background-color: #0E81C2;
   border-radius: 5px;
   padding: 3px; }
 
@@ -74,5 +74,8 @@ body {
 
 .work-info {
   margin-bottom: 40px; }
+
+.exp-time {
+  padding-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
