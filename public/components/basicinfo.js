@@ -1,4 +1,6 @@
 import React from 'react';
+import Slider from './slider';
+
 
 const BasicInfo = (props) => {
 
@@ -6,18 +8,9 @@ const BasicInfo = (props) => {
       return <div>Loading <i className="fa fa-spinner fa-spin" aria-hidden="true"></i></div>;
     }
 
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip({
-        html: true
-      })
-    })
-
-    const tooltipText = "This CV has been build with MongoDB, Express, React and Node";
-
     return(
       <div className="component-container">
-      <a href="/docs/Max__Golubev_CV.docx" className="download-icon" data-toggle="tooltip" data-placement="left" title="download cv.docx"><i className="fa fa-download fa-2x" aria-hidden="true"></i></a>
-      <a className="info" href='https://github.com/MaxGol/CV_HEROKU' data-toggle="tooltip" data-placement="left" title={ tooltipText }><span className='fa fa-2x fa-github'></span></a>
+      <Slider />
         <div className="row">
           <div className="col-xs-12">
             <img src="/images/max.png" className="img-circle center-block" />

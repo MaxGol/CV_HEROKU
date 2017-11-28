@@ -10,46 +10,14 @@ body {
   background-color: #FFFFFF;
   padding: 20px 40px;
   margin: 20px auto 20px auto;
-  border-radius: 5px; }
+  border-radius: 5px;
+  overflow: hidden; }
   .component-container .small-divider {
     width: 30%;
     margin: 10px auto; }
   .component-container .normal-divider {
     width: 100%;
     margin: 10px auto; }
-  .component-container .download-icon {
-    background-color: #0E81C2;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 12px 12px;
-    transition: .4s all;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 1; }
-    .component-container .download-icon .fa.fa-download {
-      color: #FFFFFF; }
-    .component-container .download-icon:hover {
-      cursor: pointer;
-      background-color: #139EED; }
-    .component-container .download-icon + .tooltip .tooltip-inner {
-      background-color: #139EED; }
-    .component-container .download-icon + .tooltip.left .tooltip-arrow {
-      border-left-color: #139EED; }
-  .component-container .info {
-    position: absolute;
-    right: 32px;
-    top: 80px;
-    z-index: 1; }
-    .component-container .info .fa {
-      color: #A569BD; }
-    .component-container .info + .tooltip .tooltip-inner {
-      background-color: #A569BD; }
-      .component-container .info + .tooltip .tooltip-inner a {
-        color: white; }
-    .component-container .info + .tooltip.left .tooltip-arrow {
-      border-left-color: #A569BD; }
   .component-container .section-title {
     color: #0E81C2; }
 
@@ -77,5 +45,57 @@ body {
 
 .exp-time {
   padding-top: 10px; }
+
+.slider-menu {
+  width: 70px;
+  height: 250px;
+  background-color: #0E81C2;
+  border-radius: 0 0 0 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all .5s;
+  z-index: 1000; }
+  .slider-menu.off {
+    top: -200px; }
+  .slider-menu.on {
+    top: 0; }
+    .slider-menu.on .fa.fa-chevron-down {
+      transform: rotate(180deg); }
+  .slider-menu .slider-icon {
+    text-align: center;
+    background-color: #FFFFFF;
+    margin: 20px auto;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: .4s all;
+    cursor: pointer; }
+    .slider-menu .slider-icon .fa-download {
+      margin-top: 7px; }
+    .slider-menu .slider-icon .fa-github-alt {
+      margin-top: 5px; }
+    .slider-menu .slider-icon .fa-envelope {
+      margin-top: 4px; }
+  .slider-menu .btn-slider {
+    background-color: #0E81C2;
+    padding: 6px;
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    border: 2px solid white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: all .5s;
+    z-index: 100; }
+    .slider-menu .btn-slider:hover {
+      cursor: pointer;
+      background-color: #15a0ee; }
+    .slider-menu .btn-slider .fa {
+      transition: all .5s;
+      color: white;
+      font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */
