@@ -5,7 +5,7 @@ import Slider from './slider';
 const BasicInfo = (props) => {
 
     if(!props.info) {
-      return <div>Loading <i className="fa fa-spinner fa-spin" aria-hidden="true"></i></div>;
+      return <div className="text-center"><i className="fa fa-4x fa-spinner fa-spin" aria-hidden="true"></i></div>;
     }
 
     return(

@@ -4,7 +4,7 @@ import SkillsList from './skillslist';
 const TechSkills = (props) => {
 
   if(!props.info) {
-    return <div><i className="fa fa-spinner fa-spin" aria-hidden="true"></i></div>;
+    return <div></div>;
   }
 
   const skillList = Object.keys(props.info.skills_stack).map(function(skillname, index){

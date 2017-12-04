@@ -3,7 +3,7 @@ import React from 'react';
 const Bio = (props) => {
 
   if(!props.info) {
-    return <div><i className="fa fa-spinner fa-spin" aria-hidden="true"></i></div>;
+    return <div></div>;
   }
 
   return(

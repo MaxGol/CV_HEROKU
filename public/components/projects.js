@@ -4,7 +4,7 @@ import OwlCarousel from 'react-owl-carousel2';
 const Projects = (props) => {
 
   if(!props.info) {
-    return <div><i className="fa fa-spinner fa-spin" aria-hidden="true"></i></div>;
+    return <div></div>;
   }
 
   const options = {

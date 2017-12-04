@@ -24,7 +24,7 @@ export default class Slider extends Component {
   render(){
     return(
       <div className={ "slider-menu " + ( this.state.isOpen ? 'on' : 'off' ) }>
-        <a href="/docs/Max__Golubev_CV.docx" className="slider-icon"><i className="fa fa-download fa-2x" aria-hidden="true"></i></a>
+        <a href="/docs/MGolubev_CV.docx" className="slider-icon"><i className="fa fa-download fa-2x" aria-hidden="true"></i></a>
         <a className="slider-icon" href='https://github.com/MaxGol'><i className="fa fa-github-alt fa-2x" aria-hidden="true"></i></a>
         <a className="slider-icon" href='mailto:golubev.maksim@gmail.com'><i className="fa fa-2x fa-envelope" aria-hidden="true"></i></a>
         <div onClick={ this.togglingSlider } className="btn-slider"><i className="fa fa-1x fa-chevron-down" aria-hidden="true"></i></div>

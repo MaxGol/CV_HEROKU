@@ -5,13 +5,15 @@ import Bio from './components/bio';
 import TechSkills from './components/techskills';
 import Experience from './components/experience';
 import Projects from './components/projects';
+import CVinfo from './components/cvinfo';
 
 class App extends Component {
   constructor(props){
     super(props);
 
     this.state = {
-      data: {}
+      data: {},
+      cvinfo: false
     }
 
     this.loadCommentsFromServer = this.loadCommentsFromServer.bind(this);
@@ -22,6 +24,7 @@ class App extends Component {
     axios.get(this.props.url)
       .then(res => {
         this.setState({ data: res.data[0] });
+        this.setState({ cvinfo: true });
     })
   }
 
@@ -38,6 +41,7 @@ class App extends Component {
         <TechSkills info = {this.state.data.skills} />
         <Experience info = {this.state.data.experience} />
         <Projects info = {this.state.data.projects} />
+        <CVinfo info = {this.state.cvinfo} />
       </div>
     )
   }
