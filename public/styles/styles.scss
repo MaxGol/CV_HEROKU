@@ -130,3 +130,10 @@ body {
 
   }
 }
+
+.cvinfo {
+  color: #cccccc;
+  & p {
+    margin-bottom: 0;
+  }
+}
