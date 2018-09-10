@@ -4,10 +4,10 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "source .env; node server.js",
     "build": "webpack",
     "watch": "webpack --watch",
-    "dev": "npm start & npm run watch" 
+    "dev": "npm start & npm run watch"
   },
   "author": "",
   "license": "ISC",

@@ -13,6 +13,7 @@ const ExperienceItem = (props) => {
         <h4>{ props.work.company }</h4>
         <p>{ props.work.overview }</p>
         <h5><strong>{ props.work.jobtitle }</strong></h5>
+        <p>{ props.work.intro }</p>
         <ul>
           { duty }
         </ul>
